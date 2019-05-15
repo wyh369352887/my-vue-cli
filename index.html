@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <title>总能贷</title>
+  <script src="static/flexiable.js"></script>
+  <link rel="stylesheet" href="static/reset.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+  <script crossorigin="anonymous" integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script>
+  <script crossorigin="anonymous" integrity="sha384-Syuu42tkQgszyxNSHWSh4xouXRhTwTLEj9qTUCa3YPdoZYLOIGmFq6z1VTMjS8KL" src="//lib.baomitu.com/vConsole/3.3.0/vconsole.min.js"></script>
+  <script>
+    var w = $('body').width(),
+      h = $('body').height();
+
+    if (w > 414) {
+      $('html').css('font-size', '41.4px');
+    } else if (w < 320) {
+      $('html').css('font-size', '32px');
+    }
+  </script>
+  <script>
+    $(function () {
+      if (location.href.indexOf('debug') > -1) {
+        new VConsole();
+      }
+      $('input').on('blur',function(){
+        window.scroll(0, 0);
+      })
+    })
+  </script>
+</body>
+
+</html>
