@@ -1,5 +1,5 @@
 
-> A Vue.js project
+> A Vue.js project template adapt from https://github.com/vuejs/vue-cli
 
 ## Build Setup
 
