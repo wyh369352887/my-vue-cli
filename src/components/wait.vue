@@ -1,6 +1,8 @@
 <template>
     <div id="waiting">
-        <img src="../assets/image/loading.gif" />
+        <div class="wrapper">
+            <img src="../assets/image/loading.gif" />
+        </div>
     </div>
 </template>
 <script>
@@ -18,12 +20,23 @@ export default {
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba(0, 0, 0, .6);
         z-index: 9999;
     }
-    #waiting img{
-        width: 1.4rem;
-        height: 1.4rem;
+    #waiting .wrapper{
+        width: 2rem;
+        height: 2rem;
+        border-radius: .3rem;
+        background-color: rgba(0, 0, 0, .6);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    #waiting .wrapper img{
+        width: 1rem;
+        height: 1rem;
         position: absolute;
         top: 0;
         bottom: 0;
