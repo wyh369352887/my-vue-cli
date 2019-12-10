@@ -7,7 +7,7 @@
 
 <script>
 import VConsole from "vconsole";
-import { init_wxshare } from "./scripts/wx.jsconfig";
+// import { init_wxshare } from "./scripts/wx.jsconfig";
 
 export default {
   name: "app",
@@ -52,7 +52,7 @@ export default {
       imgUrl: api + "/filter/static/wxshare.png", //分享图片链接
       apiUrl: api + "/api/wxjsconfig" //分享参数请求API
     };
-    init_wxshare();
+    // init_wxshare();
   }
 };
 </script>
